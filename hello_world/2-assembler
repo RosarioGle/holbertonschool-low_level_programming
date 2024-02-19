@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s $CFIle
+gcc -S $CFIle
