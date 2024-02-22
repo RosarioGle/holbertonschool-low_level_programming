@@ -16,6 +16,7 @@ if (num == 9)
 {
 putchar('9');
 }
+else
 {
 putchar(num);
 putchar(',');
