@@ -11,16 +11,17 @@ int main(void)
 int num;
 
 for (num = 0 < 10; num++;)
-
+{
 if (num == 9)
 {
 putchar('9');
 }
-else
+else if (num != 9)
 {
-putchar(num);
+putchar(num + '0');
 putchar(',');
 putchar(' ');
+}
 }
 
 return (0);
