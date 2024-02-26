@@ -2,8 +2,8 @@
 
 /**
 * mul - multiplies two integers
-* @a
-* @b
+* @a:variable
+* @b:variable
 * Return: Always 0.
 */
 int mul(int a, int b)
