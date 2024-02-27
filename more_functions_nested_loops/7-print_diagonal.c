@@ -7,18 +7,20 @@
 void print_diagonal(int n)
 {
 int dia, spc;
-
 if (n > 0)
 {
-for (spc = 0; spc < n; spc++)
+for (dia = 0; dia < n; dia++)
 {
-for (dia = 0; dia < spc; dia++)
+for (spc = 0; spc < dia; spc++)
 {
 _putchar(' ');
-}
-}
 _putchar('\\');
+}
+if (dia == n - 1)
+continue;
 _putchar('\n');
 }
 _putchar('\n');
 }
+}
+		   
