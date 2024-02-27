@@ -16,8 +16,9 @@ for (dia = 0; dia < spc; dia++)
 {
 _putchar(' ');
 }
+}
 _putchar('\\');
 _putchar('\n');
 }
-}
+_putchar('\n');
 }
