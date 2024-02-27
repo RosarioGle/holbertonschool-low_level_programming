@@ -9,13 +9,13 @@ void more_numbers(void)
 {
 int c, b;
 
-for (c = 0; c <= 14; c++)
+for (c = 0; c <= 10; c++)
 {
 for (b = 0; b <= 14; b++)
 {
-if (c > 9)
+if (b > 9)
 _putchar('1');
-_putchar((b % 10) + '0');
+_putchar(b % 10 + '0');
 }
 _putchar ('\n');
 }
