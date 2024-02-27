@@ -13,7 +13,9 @@ _putchar('\n');
 else
 {
 for (m = 0; m < n; m++)
+{
 _putchar('_');
+}
 }
 _putchar('\n');
 }
