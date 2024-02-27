@@ -12,7 +12,7 @@ _putchar('\n');
 }
 else
 {
-for (m = 1; m <= n; m++)
+for (m = 0; m < n; m++)
 _putchar('_');
 }
 _putchar('\n');
