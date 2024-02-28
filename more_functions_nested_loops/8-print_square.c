@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* print_diagonal - print a diagonal
+* print_square - print a diagonal
 *
 * @size: number of times for diagonal
 */
