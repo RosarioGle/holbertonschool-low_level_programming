@@ -8,11 +8,10 @@
 * @b:variable b
 */
 
-void swap_int(int *a, int *b);
-
+void swap_int(int *a, int *b)
 {
 int p1 = *a;
 int p2 = *b;
 *a = p2;
-*b =p1;
+*b = p1;
 }
