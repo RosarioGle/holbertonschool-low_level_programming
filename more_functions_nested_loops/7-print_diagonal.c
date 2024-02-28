@@ -22,7 +22,7 @@ while (esp < i)
 _putchar(' ');
 esp++;
 }
- _putchar('\\');
+_putchar('\\');
 _putchar('\n');
 i++;
 }
