@@ -10,6 +10,6 @@
 void _puts(char *str)
 {
 while (*str)
-putchar(*str++);
-putchar('\n');
+_putchar(*str++);
+_putchar('\n');
 }
