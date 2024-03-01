@@ -3,12 +3,9 @@
 
 /**
 * _strcmp - compares two strings.
-*
-* @s1: first chaine
-*
-* @s2: second chaine
-*
-* Return: ASCII value.
+* @s1:variable
+* @s2:variable
+* Return: Always 0.
 */
 
 int _strcmp(char *s1, char *s2)
