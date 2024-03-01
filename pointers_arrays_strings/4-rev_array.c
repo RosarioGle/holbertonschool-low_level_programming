@@ -3,10 +3,8 @@
 
 /**
 * reverse_array - reverse a string until n
-*
-* @a: pointer a
-*
-* @n: number of time
+* @a:variable
+* @n:variable
 */
 
 void reverse_array(int *a, int n)
