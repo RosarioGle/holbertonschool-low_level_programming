@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _puts_resursion - fonction that prints a string
+* _puts_recursion - prints a string
 * @s:variable
 * Return: Always 0.
 */
