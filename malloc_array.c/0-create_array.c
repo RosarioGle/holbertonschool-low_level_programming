@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** 
-* *create_array
+/**
+* *create_array - creates an array of chars,
+* and initializes it
 * @size:variable
 * @c:viriable
 * Return: Always 0.
