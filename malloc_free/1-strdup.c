@@ -18,9 +18,9 @@ char *tbl;
 if (str == 0)
 return (NULL);
 
-while (str[len] != 0)
+while (str[len] != '\0')
 len++;
-tbl = malloc(len *sizeof(char));
+tbl = malloc((len + 1) *sizeof(char));
 
 if (tbl == 0)
 return (NULL);
