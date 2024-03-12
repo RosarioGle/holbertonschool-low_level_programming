@@ -16,7 +16,7 @@ int **p;
 
 if ((width <= 0) || (height <= 0))
 return (NULL);
-p = malloc(height * sizeof(int*));
+p = malloc(height * sizeof(int *));
 if (p == 0)
 return (NULL);
 for (a = 0; a < height; a++)
