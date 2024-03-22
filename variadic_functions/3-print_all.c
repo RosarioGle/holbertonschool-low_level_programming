@@ -10,7 +10,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int a, b;
+	int i, j;
 	char *separator = "";
 
 	type_t style[] = {
@@ -22,22 +22,22 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	a = 0;
+	i = 0;
 
-	while (format && format[a])
+	while (format && format[i])
 	{
-		b = 0;
-		while (style[b].type)
+		j = 0;
+		while (style[j].type)
 		{
-			if (style[b].type == format[a])
+			if (style[j].type == format[i])
 			{
 				printf("%s", separator);
-				style[b].f(args);
+				style[j].f(args);
 				separator = ", ";
 			}
-			b++;
+			j++;
 		}
-		a++;
+		i++;
 	}
 	va_end(args);
 	printf("\n");
