@@ -23,8 +23,8 @@ int main(void)
 			if (i == 8 && j == 9)
 				putchar('\n');
 			else
-				putchar(',');
-			putchar(' ');
+				putchar(','),
+					putchar(' ');
 		}
 	}
 	return (0);
