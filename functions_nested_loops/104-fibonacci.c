@@ -1,40 +1,49 @@
+
 #include <stdio.h>
 
-#define MAX 98
-#define SPLIT 10000000000
-
 /**
- * main - finds and prints the first 98 Fibonacci numbers
- *
- * Return: Always 0
- */
+* main - print the 50 first number of Fibonacci.
+*
+* Return: 0.
+*/
 
 int main(void)
 {
-	unsigned long int a1 = 1, a2 = 0, b1 = 2, b2 = 0;
-	unsigned long int c1, c2;
-	int count;
+	int i;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
+	unsigned long half1, half2;
 
-	printf("%lu, %lu", a1, b1);
-	for (count = 2; count < MAX; count++)
+	for (i = 0; i < 92; i++)
 	{
-		c1 = a1 + b1;
-		c2 = a2 + b2;
-		if (c2 >= SPLIT)
+		sum = fib1 + fib2;
+		printf("%lu, ", sum);
+		fib1 = fib2;
+		fib2 = sum;
+	}
+
+	fib1_half1 = fib1 / 10000000000;
+	fib2_half1 = fib2 / 10000000000;
+	fib1_half2 = fib1 % 10000000000;
+	fib2_half2 = fib2 % 10000000000;
+	for (i = 93; i < 99; i++)
+	{
+		half1 = fib1_half1 + fib2_half1;
+		half2 = fib1_half2 + fib2_half2;
+	if (fib1_half2 + fib2_half2 > 9999999999)
 		{
-			c1 += c2 / SPLIT;
-			c2 = c2 % SPLIT;
+			half1 += 1;
+			half2 %= 10000000000;
 		}
-		printf(", %lu", c1);
-		if (c2 > 0)
-		{
-			printf("%010lu", c2);
-		}
-		a1 = b1;
-		a2 = b2;
-		b1 = c1;
-		b2 = c2;
+		printf("%lu%lu", half1, half2);
+		if (i != 98)
+		printf(", ");
+		fib1_half1 = fib2_half1;
+		fib1_half2 = fib2_half2;
+		fib2_half1 = half1;
+		fib2_half2 = half2;
 	}
 	printf("\n");
 	return (0);
 }
+
