@@ -62,8 +62,7 @@ char **strtow(char *str)
 			{
 				len++;
 				i++;
-			}
-			words[j] = malloc((len + 1) * sizeof(char));
+			} words[j] = malloc((len + 1) * sizeof(char));
 			if (words[j] == NULL)
 			{
 				for (k = 0; k < j; k++)
@@ -75,8 +74,7 @@ char **strtow(char *str)
 				words[j][k] = word_start[k];
 			words[j][k] = '\0';
 			j++;
-		}
-		else
+		} else
 			i++;
 	}
 	words[j] = NULL;
