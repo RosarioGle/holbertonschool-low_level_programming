@@ -1,11 +1,3 @@
-Great! You've completed the quiz successfully! Keep going! (Show quiz)
-Tasks
-0. What's my name
-mandatory
-Write a function that prints a name.
-
-Prototype: void print_name(char *name, void (*f)(char *));
-julien@ubuntu:~/0x0e. Function pointers$ cat 0-main.c
 #include <stdio.h>
 #include "function_pointers.h"
 
