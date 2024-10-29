@@ -9,7 +9,8 @@
 void rev_string(char *s)
 {
 	int len = 0;
-	int a, c;
+	int a;
+	int c = 0;
 	char cpy;
 
 	while (s[len])
