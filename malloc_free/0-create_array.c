@@ -20,8 +20,8 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	t = malloc(size * sizeof(char));
 	if (t == 0)
-		return(NULL);
+		return (NULL);
 	for (b = 0; b <= size - 1; b++)
 		t[b] = c;
-	return(t);
+	return (t);
 }
