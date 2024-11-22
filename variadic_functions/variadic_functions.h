@@ -8,7 +8,7 @@
 /**
  * struct ls - struct ls
  * @ls: the type
- * @f the functions
+ * @f: the functions
  */
 
 typedef struct ls
