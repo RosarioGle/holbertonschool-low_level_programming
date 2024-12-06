@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	if (rd < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(99);
+		exit(98);
 	}
 	a = close(book_read);
 	b = close(book_write);
