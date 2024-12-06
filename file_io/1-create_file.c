@@ -4,7 +4,7 @@
  * create_file - creates a file
  *
  * @filename: the name of the file
- * @test_content: the content of the file
+ * @text_content: the content of the file
  *
  * Return: 1 on success, -1 on failure
  */
